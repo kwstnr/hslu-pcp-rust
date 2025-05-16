@@ -1,6 +1,4 @@
 fn main() {
-    println!("B)");
-
     let tree = Node::new(
         Expression::ADD,
         Some(Box::new(Node::new(
@@ -43,6 +41,39 @@ fn main() {
     println!("Result: {}", result);
 
     let instructions = tree.compile();
+    println!("{:?}", instructions);
+
+    let mut stack_machine = StackMachine::new();
+    let result = stack_machine.process_instructions(&instructions);
+    println!("Result: {}", result);
+
+
+    let tree2 = Node::new(
+        Expression::MUL,
+        Some(Box::new(Node::new(
+            Expression::ADD,
+            Some(Box::new(Node::new(
+                Expression::Value(2),
+                None,
+                None
+            ))),
+            Some(Box::new(Node::new(
+                Expression::Value(3),
+                None,
+                None
+            )))
+        ))),
+        Some(Box::new(Node::new(
+            Expression::Value(4),
+            None,
+            None
+        )))
+    );
+
+    let result = tree2.eval();
+    println!("Result: {}", result);
+
+    let instructions = tree2.compile();
     println!("{:?}", instructions);
 
     let mut stack_machine = StackMachine::new();
