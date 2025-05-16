@@ -21,11 +21,11 @@ HSLU-PCP Team Project exploring the Rust programming language
 Bsp: Raymond aus "Rain Man" Prolog, Scala "Eduard mit den Scherenhänden", etc.
 
 # Termine
-- [ ] 25.04. Team & Sprache fixiert
-- [ ] 02.05. Grober Themenfokus fixiert
+- [x] 25.04. Team & Sprache fixiert
+- [x] 02.05. Grober Themenfokus fixiert
 "Tragen Sie ihre Fokuspunkte als Antwort in ihrem Beitrag im PCP-Sprach-Forum ein!"
 stichwortartig, ggf. inkl. kurze Pseudo-Code-Sequenzen.
-- [ ] 08.05. Code-Demo / Coaching
+- [x] 08.05. Code-Demo / Coaching
 Demo von bis dahin erstellten Code.
 Lösen und zeigen von 3 Aufgaben vom Modul in Rust
 Keine schriftliche Abgabe!
@@ -58,7 +58,7 @@ Inhalt:
 - min. je ein Code-Beispiel zu jeweiligen Fokuspunkten
 
 # ToDos
-- [ ] README mit setup (macOS & Windows)
+- [x] README mit setup (macOS & Windows)
 - [ ] Einleitung Sprache
 - [ ] Fokuspunkte definieren, machen
 - [ ] Aufgaben
