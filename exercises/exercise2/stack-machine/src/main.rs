@@ -18,6 +18,7 @@ enum Instruction {
     ADD,
     SUB,
     MUL,
+    DIV,
 }
 
 struct StackMachine {
@@ -41,12 +42,17 @@ impl StackMachine {
                 Instruction::SUB => {
                     let a = self.data.pop().unwrap();
                     let b = self.data.pop().unwrap();
-                    self.data.push(a - b);
+                    self.data.push(b - a);
                 }
                 Instruction::MUL => {
                     let a = self.data.pop().unwrap();
                     let b = self.data.pop().unwrap();
                     self.data.push(a * b);
+                },
+                Instruction::DIV => {
+                    let a = self.data.pop().unwrap();
+                    let b = self.data.pop().unwrap();
+                    self.data.push(b / a);
                 }
             }
         }
