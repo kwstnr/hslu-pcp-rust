@@ -7,16 +7,21 @@ fn main() {
     let f_twenty = fibonacci(20);
     println!("Fibonacci of 20 is: {}", f_twenty);
 
-    let mut memoized_fib = vec![0; 50];
+    let f_high = fibonacci(46);
+    println!("Fibonacci of 45 is: {}", f_high);
 
-    let f_memoized_thirty = fibonacci_memoized(30, &mut memoized_fib);
-    println!("Fibonacci of 30 is: {}", f_memoized_thirty);
 
-    let f_memoized_forty = fibonacci_memoized(40, &mut memoized_fib);
-    println!("Fibonacci of 40 is: {}", f_memoized_forty);
+
+    // let mut memoized_fib = vec![0; 50];
+    //
+    // let f_memoized_thirty = fibonacci_memoized(30, &mut memoized_fib);
+    // println!("Fibonacci of 30 is: {}", f_memoized_thirty);
+    //
+    // let f_memoized_forty = fibonacci_memoized(40, &mut memoized_fib);
+    // println!("Fibonacci of 40 is: {}", f_memoized_forty);
 }
 
-fn fibonacci(n: u32) -> u32 {
+fn fibonacci(n: u64) -> u64 {
     if n <= 1 {
         return n;
     }
