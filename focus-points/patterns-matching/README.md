@@ -17,6 +17,7 @@ match msg {
     Message::ChangeColor(r, g, b) => { ... }
 }
 ```
+
 Ähnlich kann auch mit dem `if let`-Konstrukt gearbeitet werden, ähnlich wie das let in Clojure:
 
 ```rust
@@ -38,9 +39,11 @@ println!("Wert ist {}", x);
 
 ```bash
 Nachricht: Hallo Pattern Matching!
-Bewege zu (10, 20)
-Farbe: RGB(255, 0, 0)
-Programm wird beendet.
+Bewege zu Position (10, 20)
+Farbe ändern zu RGB(255, 0, 0)
+Das Programm wird beendet.
+Der Wert ist: 3
+Kein Wert vorhanden
 ```
 
 ## Mehr Infos
