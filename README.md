@@ -111,3 +111,6 @@ Wenn du Rust nun installiert hast und interesse an mehr hast, führe folgenden B
 rustup docs --book
 ```
 und geniesse das tolle Buch für deinen Einstieg in Rust!
+
+---
+See full project for cloning on [GitHub](https://github.com/kwstnr/hslu-pcp-rust)
